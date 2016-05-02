@@ -1,0 +1,12 @@
+{
+    "name": "WebRTC Roadmap",
+    "lang": "en",
+    "start_url": "./",
+    "icons": [
+        {"src": "",
+         "sizes": "any",
+         "type": "image/png"
+        }
+    ],
+    "display": "standalone"
+}
