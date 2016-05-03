@@ -3,7 +3,7 @@
     "lang": "en",
     "start_url": "./",
     "icons": [
-        {"src": "assets/img/appfoundation-icon.png",
+        {"src": "assets/img/appfoundation-icon-shadow.png",
          "sizes": "any",
          "type": "image/png"
         }
