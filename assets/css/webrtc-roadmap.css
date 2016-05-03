@@ -1,9 +1,12 @@
 .side-nav {
-    margin-top: 60px;
+    --padding-top: 60px;
 }
 
 .side-nav ul {
     list-style-type: none;
+}
+
+.side-nav > ul {
 }
 
 .side-nav a {
@@ -125,7 +128,6 @@ footer p {
 }
 
 #side-nav {
-    display: none;
 }
 
 @media (min-width: 768px) {
@@ -238,14 +240,25 @@ footer p {
 @media (min-width: 1480px) {
 
     #side-nav {
-        display: block;
         position: fixed;
         top: 0px;
+        left: 0px;
         z-index: 1;
-        width: 300px;
+        width: 350px;
         height: 100%;
+        overflow-y: scroll;
         background-color: #F6F8FA;
     }
+
+    #side-nav > ul {
+            padding-right: 80px;
+            margin-top: 160px;
+        }
+
+        #side-nav > ul > li > ul {
+                display: none;
+            }
+
 
         .container {
             max-width:768px;
