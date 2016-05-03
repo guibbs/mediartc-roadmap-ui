@@ -1,9 +1,9 @@
 {
-    "name": "WebRTC Roadmap",
+    "name": "App Foundation",
     "lang": "en",
     "start_url": "./",
     "icons": [
-        {"src": "",
+        {"src": "assets/img/appfoundation-icon.png",
          "sizes": "any",
          "type": "image/png"
         }
