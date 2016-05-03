@@ -34,23 +34,8 @@
     color: #0072ff;
 }
 
-
 .page-location {
-    width: 100%;
-    margin-top: 60px;
-    display: flex;
-    border-bottom: 1px solid #F6F8FA;
-}
-
-.page-location p {
-    font-size: 0.8em;
-}
-
-.page-location a {
-}
-
-.page-location a:hover {
-    text-decoration: underline;
+    display: none;
 }
 
 
@@ -156,6 +141,24 @@ footer p {
         margin: auto;
     }
 
+    .page-location {
+        width: 100%;
+        margin-top: 60px;
+        display: flex;
+        border-bottom: 1px solid #F6F8FA;
+    }
+
+    .page-location p {
+        font-size: 0.8em;
+    }
+
+    .page-location a {
+    }
+
+    .page-location a:hover {
+        text-decoration: underline;
+    }
+
     .hero {
         padding: 20px 0px 0px 0px;
         border-bottom: 0px;
@@ -211,7 +214,6 @@ footer p {
     ul.roadmap-list li a:hover .icon img {
         -webkit-filter: grayscale(0);
         filter: grayscale(0);
-    
     }
 
     ul.roadmap-list li .description {
