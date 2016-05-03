@@ -1,13 +1,35 @@
 .page-location {
-    height: 60px;
+    width: 100%;
     margin-top: 60px;
+    display: flex;
+    border-bottom: 1px solid #F6F8FA;
 }
 
+.page-location p {
+    color: #547190;
+    font-size: 0.8em;
+}
+
+.page-location a {
+}
+
+.page-location a:hover {
+    text-decoration: underline;
+}
+
+.page-location a.active {
+    opacity: 1;
+    color: #547190;
+}
 
 .hero {
     background-color: #F6F8FA;
     padding: 10px 0px 20px 0px;
     border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.hero .call-to-action {
+    margin-top: 20px;
 }
 
 h1 {
@@ -28,6 +50,14 @@ ul.roadmap-list li {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+ul.roadmap-list li a {
+    text-decoration: none;
+}
+
+ul.roadmap-list li a:hover h2 {
+    color: #0072ff;
 }
 
 ul.roadmap-list li .icon {
@@ -89,6 +119,7 @@ footer p {
 @media (min-width: 768px) {
 
     .container {
+        width: 100%;
         max-width:768px;
         margin: auto;
     }
@@ -99,7 +130,7 @@ footer p {
     }
 
     .hero {
-        padding: 50px 0px 0px 0px;
+        padding: 20px 0px 0px 0px;
         border-bottom: 0px;
         background-color: transparent;
     }
@@ -109,7 +140,7 @@ footer p {
     }
 
     .hero p {
-        font-size: 1em;
+        font-size: 0.8em;
         line-height: 1.8em;
     }
 
@@ -142,7 +173,7 @@ footer p {
 
     ul.roadmap-list li .icon img {
         width: auto;
-        height: 60px;
+        height: 50px;
         margin: auto;
     }
 
@@ -150,9 +181,16 @@ footer p {
         padding: 0px 30px 0px 30px;
         border-bottom: 0px;
     }
+
+    .contribute {
+        background-color: transparent;
+        border: 0px;
+    }
+
     footer {
         border: 0px;
     }
+
     footer .container {
         border-top: 1px solid rgba(0,0,0,0.1);
     }
@@ -164,7 +202,7 @@ footer p {
         display: block;
         position: fixed;
         top: 0px;
-        z-index: -10;
+        z-index: 1;
         width: 300px;
         height: 100%;
         background-color: #F6F8FA;
@@ -198,11 +236,6 @@ footer p {
         ul.roadmap-list li {
             width: 45%;
             margin-right: 30px;
-        }
-
-        .contribute {
-            background-color: transparent;
-            border: 0px;
         }
 
         footer {
