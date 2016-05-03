@@ -128,6 +128,7 @@ footer p {
 }
 
 #side-nav {
+    display: none;
 }
 
 @media (min-width: 768px) {
@@ -240,6 +241,7 @@ footer p {
 @media (min-width: 1480px) {
 
     #side-nav {
+        display: block;
         position: fixed;
         top: 0px;
         left: 0px;
