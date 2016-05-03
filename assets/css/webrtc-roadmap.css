@@ -16,10 +16,6 @@
     text-decoration: underline;
 }
 
-.page-location a.active {
-    opacity: 1;
-    color: #547190;
-}
 
 .hero {
     background-color: #F6F8FA;
@@ -55,10 +51,6 @@ ul.roadmap-list li a {
     text-decoration: none;
 }
 
-ul.roadmap-list li a:hover h2 {
-    color: #0072ff;
-}
-
 ul.roadmap-list li .icon {
     width: 20%;
     text-align: center;
@@ -67,6 +59,14 @@ ul.roadmap-list li .icon {
 ul.roadmap-list li .icon img {
     width: 45px;
     height: auto;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    transition: 0.2s;
+}
+
+ul.roadmap-list li a:hover .icon img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
 }
 
 ul.roadmap-list li .description {
