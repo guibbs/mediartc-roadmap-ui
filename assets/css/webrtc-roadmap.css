@@ -6,7 +6,6 @@
 }
 
 .page-location p {
-    color: #547190;
     font-size: 0.8em;
 }
 
@@ -37,7 +36,7 @@ h1 {
 }
 
 p {
-    color: #A2B1C1;
+    color: rgba(0,0,0,0.7);
 }
 
 ul.roadmap-list {
@@ -89,7 +88,6 @@ ul.roadmap-list li .description h2 {
 ul.roadmap-list li .description p {
     margin-top: 5px;
     font-size: 0.8em;
-    color:  #A2B1C1;
 }
 
 .contribute {
