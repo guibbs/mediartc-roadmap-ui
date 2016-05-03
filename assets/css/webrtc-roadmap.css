@@ -1,3 +1,40 @@
+.side-nav {
+    margin-top: 60px;
+}
+
+.side-nav ul {
+    list-style-type: none;
+}
+
+.side-nav a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.7);
+    font-size: 0.8em;
+}
+
+.side-nav a:hover {
+    text-decoration: underline;
+}
+
+.side-nav ul {
+    padding-left: 30px;
+}
+
+.side-nav ul li h2 {
+    margin-bottom: 5px;
+}
+
+.side-nav ul li h2 a {
+    font-size: 0.9em;
+    color: #547190;
+}
+
+.side-nav ul li h2 a:hover {
+    text-decoration: none;
+    color: #0072ff;
+}
+
+
 .page-location {
     width: 100%;
     margin-top: 60px;
@@ -42,13 +79,13 @@ ul.roadmap-list {
 }
 
 ul.roadmap-list li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 ul.roadmap-list li a {
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 ul.roadmap-list li .icon {
@@ -59,14 +96,6 @@ ul.roadmap-list li .icon {
 ul.roadmap-list li .icon img {
     width: 45px;
     height: auto;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-    transition: 0.2s;
-}
-
-ul.roadmap-list li a:hover .icon img {
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
 }
 
 ul.roadmap-list li .description {
@@ -164,8 +193,10 @@ footer p {
         padding-top: 40px;
         padding-bottom: 20px;
     }
-
-    ul.roadmap-list li .icon {
+    ul.roadmap-list li a {
+        display: block;
+    }
+    ul.roadmap-list li a .icon {
         width: 100%;
     }
 
@@ -173,6 +204,14 @@ footer p {
         width: auto;
         height: 50px;
         margin: auto;
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+    }
+
+    ul.roadmap-list li a:hover .icon img {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+    
     }
 
     ul.roadmap-list li .description {
