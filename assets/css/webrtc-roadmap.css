@@ -107,6 +107,9 @@ p {
     color: rgba(0,0,0,0.7);
 }
 
+.features .container {
+    padding: 0px;
+}
 ul.roadmap-list {
     list-style-type: none;
     margin: 0px;
