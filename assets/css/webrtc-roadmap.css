@@ -38,14 +38,60 @@
 }
 
 .page-location {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    z-index: 2;
+    background-color: #0072ff;
+    --box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+}
+
+.page-location .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.page-location button {
+    height: 40px;
+    width: 40px;
+    background: none;
+    border: 0px;
+    box-shadow: none;
+    background-image: url('../img/menu-icon-white.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:  auto 18px;
+    margin-right: 10px;
+}
+
+.page-location p{
+    color: white;
+}
+.page-location a {
+    display: none;
+}
+
+.page-location span {
     display: none;
 }
 
 
 .hero {
-    background-color: #F6F8FA;
+    margin-top: 60px;
     padding: 10px 0px 20px 0px;
     border-bottom: 1px solid rgba(0,0,0,0.1);
+    background-color: #0072ff;
+}
+
+.hero p {
+
+    color: rgba(255,255,255,0.8);
 }
 
 .hero .call-to-action {
@@ -54,6 +100,7 @@
 
 h1 {
     color: #547190;
+    color: white;
 }
 
 p {
@@ -133,6 +180,9 @@ footer p {
 
 @media (min-width: 768px) {
 
+    header {
+
+    }
     .container {
         width: 100%;
         max-width:768px;
@@ -145,17 +195,31 @@ footer p {
     }
 
     .page-location {
+        position: relative;
         width: 100%;
         margin-top: 60px;
         display: flex;
+        background-color: transparent;
         border-bottom: 1px solid #F6F8FA;
+        box-shadow: none;
+    }
+
+    .page-location button {
+        background-image: url('../img/menu-icon-black.svg');
+        opacity: 0.6;
     }
 
     .page-location p {
+        color: rgba(0,0,0,0.7);
         font-size: 0.8em;
     }
 
     .page-location a {
+        display: inline;
+    }
+
+    .page-location span {
+        display: inline;
     }
 
     .page-location a:hover {
@@ -164,17 +228,35 @@ footer p {
 
     .hero {
         padding: 20px 0px 0px 0px;
+        margin-top: 0px;
         border-bottom: 0px;
         background-color: transparent;
     }
 
     .hero h1 {
         font-size: 1.4em;
+        color: #547190;
     }
-
     .hero p {
         font-size: 0.8em;
         line-height: 1.8em;
+            color: rgba(0,0,0,0.7);
+    }
+
+    .hero .btn-negative {
+        background-color: #0072ff;
+        border: 1px solid #0072ff;
+        border-radius: 3px;
+        color: white;
+        padding: 7px 15px 7px 15px;
+    }
+
+    .hero .btn-reverse-negative {
+        background-color: transparent;
+        border: 1px solid #0072ff;
+        border-radius: 3px;
+        padding: 7px 15px 7px 15px;
+        color: #0072ff;
     }
 
     ul.roadmap-list {
