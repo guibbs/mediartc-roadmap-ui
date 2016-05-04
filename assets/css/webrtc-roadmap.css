@@ -70,12 +70,14 @@
     margin-right: 10px;
 }
 
-.page-location p{
+.page-location p {
     color: white;
 }
-.page-location a {
-    display: none;
+
+.page-location p a {
+    color: white;
 }
+
 
 .page-location span {
     display: none;
