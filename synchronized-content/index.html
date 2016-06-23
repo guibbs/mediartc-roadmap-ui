@@ -1,36 +1,128 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Media Rendering - Standards for Media and Real Time Communications on the Web</title>
-        <meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="theme-color" content="#0072ff">
-        <meta name="apple-mobile-web-app-status-bar-style" content="#0072ff">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,100,300,700,900' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="assets/css/theme.css">
-        <link rel="stylesheet" href="assets/css/webrtc-roadmap.css">
-        <link rel="manifest" href="manifest.json">
-    </head>
-    <body>
-        <header>
-        </header>
-        <section id="side-nav">
-            <ul>
-            </ul>
+  <head>
+    <title>Standards for Media and Real Time Communications on the Web</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0072ff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0072ff">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/roadmap.css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <button type="button" name="sidenav-opener"><img src="../assets/img/icon-humberger.svg" height="15" alt=""></button>
+
+
+                <div class="brand">
+                  <img src="../assets/img/w3cdevelopers-logo.svg" height="30" alt="">
+                </div>
+      </div>
+
+    </header>
+
+
+
+    <main>
+      <div class="sidenav-wrapper">
+        <nav class="sidenav">
+          <ul>
+            <li>
+              <a href="#">Media rendering</a>
+              <ul>
+                <li><a href="#">Well-deployed</a></li>
+                <li><a href="#">In Progress</a></li>
+                <li><a href="#">Exploratory work</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Media processing</a>
+              <ul>
+                <li><a href="#">Well-deployed</a></li>
+                <li><a href="#">In Progress</a></li>
+                <li><a href="#">Exploratory work</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="active" href="#">Synchronized content</a>
+              <ul>
+                <li><a href="#">Well-deployed</a></li>
+                <li><a href="#">In Progress</a></li>
+                <li><a href="#">Exploratory work</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Media control</a>
+              <ul>
+                <li><a href="#">Well-deployed</a></li>
+                <li><a href="#">In Progress</a></li>
+                <li><a href="#">Exploratory work</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Media transmission</a>
+              <ul>
+                <li><a href="#">Well-deployed</a></li>
+                <li><a href="#">In Progress</a></li>
+                <li><a href="#">Exploratory work</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Media capture</a>
+              <ul>
+                <li><a href="#">Well-deployed</a></li>
+                <li><a href="#">In Progress</a></li>
+                <li><a href="#">Exploratory work</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="sidenav-overlay"></div>
+      </div>
+      <div class="content-wrapper">
+        <section class="hero">
+            <div class="container">
+                <h1>Synchronized content</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
         </section>
-        <main>
-            <nav class="page-location">
-                <div class="container">
-                    <p>
-                        <a href="#">App Foundation</a> / <a href="#">Media and Real Time Communications on the Web</a> / Synchronized Content
-                    </p>
-                </div>
-            </nav>
-            <section class="hero">
-                <div class="container">
-                    <h1>Synchronized Content</h1>
-                </div>
-            </section>
+        <section class="main-content">
+
+        </section>
+        <section class="contribute">
+            <div class="container">
+                <p>
+                    Readers are strongly encouraged to submit their use cases that cannot be achieved today with Web technologies, either by starting a new topic in the <a href="https://discourse.wicg.io/c/mediartc">Media and Real-Time Communications category of W3C’s discourse forum</a> or by raising an <a href="https://github.com/dontcallmedom/mediartc-roadmap/issues/new">issue on the Github repository</a> where this document is maintained.
+                </p>
+                <p class="call-to-action">
+                  <a class="btn" href="https://github.com/dontcallmedom/mediartc-roadmap/">Github</a>
+                  <a class="btn reverse" href="https://discourse.wicg.io/c/mediartc">Discourse</a>
+                </p>
+            </div>
+        </section>
+      </div>
+
         </main>
+        <footer>
+            <div class="container">
+                <p>
+                    World Wide Web Consortium ®
+                    <br>
+                    MIT · ERCIM · Keio · Beihang
+                    <br>
+                    Usage policies apply
+                </p>
+            </div>
+        </footer>
+        <script type="text/javascript" src="assets/js/side-nav.js"></script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
     </body>
 </html>

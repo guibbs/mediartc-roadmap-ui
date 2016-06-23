@@ -1,19 +1,15 @@
 (function () {
   var sideNavBtn = document.getElementsByName('sidenav-opener')[0]
-  var sideNavOverlay = document.getElementById('side-nav-overlay')
-  var sideNavContent = document.getElementById('side-nav-content')
+  var sideNavOverlay = document.getElementsByClassName('sidenav-overlay')[0]
+  var sideNav = document.getElementsByClassName('sidenav')[0]
 
   sideNavBtn.addEventListener('click', function () {
     sideNavOverlay.className += ' active'
-    sideNavContent.className += ' active'
+    sideNav.className += ' active'
   })
 
   sideNavOverlay.addEventListener('click', function () {
     sideNavOverlay.className = sideNavOverlay.className.replace('active', 'hidden')
-    sideNavContent.className = sideNavContent.className.replace('active', 'hidden')
-  })
-
-  sideNavContent.addEventListener('click', function () {
-
+    sideNav.className = sideNav.className.replace('active', 'hidden')
   })
 })()
