@@ -17,7 +17,7 @@
 
     <header>
       <div class="container">
-        <button type="button" name="sidenav-opener"><img src="../assets/img/icon-humberger.svg" height="15" alt=""></button>
+        <button id="side-nav-btn" type="button" name="sidenav-opener"><img src="../assets/img/icon-humberger.svg" height="15" alt=""></button>
 
 
                 <div class="brand">
@@ -30,61 +30,6 @@
 
 
     <main>
-      <div class="sidenav-wrapper">
-        <nav class="sidenav">
-          <ul>
-            <li>
-              <a href="#">Media rendering</a>
-              <ul>
-                <li><a href="#">Well-deployed</a></li>
-                <li><a href="#">In Progress</a></li>
-                <li><a href="#">Exploratory work</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Media processing</a>
-              <ul>
-                <li><a href="#">Well-deployed</a></li>
-                <li><a href="#">In Progress</a></li>
-                <li><a href="#">Exploratory work</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Synchronized content</a>
-              <ul>
-                <li><a href="#">Well-deployed</a></li>
-                <li><a href="#">In Progress</a></li>
-                <li><a href="#">Exploratory work</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="active" href="#">Media control</a>
-              <ul>
-                <li><a href="#">Well-deployed</a></li>
-                <li><a href="#">In Progress</a></li>
-                <li><a href="#">Exploratory work</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Media transmission</a>
-              <ul>
-                <li><a href="#">Well-deployed</a></li>
-                <li><a href="#">In Progress</a></li>
-                <li><a href="#">Exploratory work</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Media capture</a>
-              <ul>
-                <li><a href="#">Well-deployed</a></li>
-                <li><a href="#">In Progress</a></li>
-                <li><a href="#">Exploratory work</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-        <div class="sidenav-overlay"></div>
-      </div>
       <div class="content-wrapper">
         <section class="hero">
             <div class="container">
@@ -111,6 +56,68 @@
       </div>
 
         </main>
+
+        <aside id="side-nav">
+          <nav>
+            <ul>
+              <li>
+                <a href="../media-rendering">
+                  <div class="description">
+                    <p>
+                      Media rendering
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="../media-processing">
+                  <div class="description">
+                    <p>
+                      Media processing
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="../synchronized-content">
+                  <div class="description">
+                    <p>
+                      Synchronized content
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="../media-control">
+                  <div class="description">
+                    <p>
+                      Media control
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="../media-transmission">
+                  <div class="description">
+                    <p>
+                      Media transmission
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="../media-capture">
+                  <div class="description">
+                    <p>
+                      Media capture
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+    <div id="mask"></div>
         <footer>
             <div class="container">
                 <p>
@@ -122,7 +129,7 @@
                 </p>
             </div>
         </footer>
-        <script type="text/javascript" src="assets/js/side-nav.js"></script>
+        <script type="text/javascript" src="assets/js/sidenav.js"></script>
         <script type="text/javascript" src="assets/js/app.js"></script>
     </body>
 </html>
