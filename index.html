@@ -17,7 +17,7 @@
 
     <header>
       <div class="container">
-        <button type="button" name="sidenav-opener"><img src="assets/img/icon-humberger.svg" height="15" alt=""></button>
+        <button id="side-nav-btn" type="button" name="sidenav-opener"><img src="assets/img/icon-humberger.svg" height="15" alt=""></button>
 
 
                 <div class="brand">
@@ -27,10 +27,87 @@
 
     </header>
 
-
+    <aside id="side-nav">
+      <nav>
+        <ul>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <img src="assets/img/side_nav_home_icon.svg" height="22" alt="">
+              </div>
+              <div class="description">
+                <p>
+                  Media rendering
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="schedule/">
+              <div class="icon">
+                <img src="assets/img/side_nav_calendar_icon.svg" height="22" alt="">
+              </div>
+              <div class="description">
+                <p>
+                  Media processing
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="map/">
+              <div class="icon">
+                <img src="assets/img/side_nav_location_icon.svg" height="22" alt="">
+              </div>
+              <div class="description">
+                <p>
+                  Synchronized content
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="map/">
+              <div class="icon">
+                <img src="assets/img/side_nav_location_icon.svg" height="22" alt="">
+              </div>
+              <div class="description">
+                <p>
+                  Media control
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="map/">
+              <div class="icon">
+                <img src="assets/img/side_nav_location_icon.svg" height="22" alt="">
+              </div>
+              <div class="description">
+                <p>
+                  Media transmission
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="map/">
+              <div class="icon">
+                <img src="assets/img/side_nav_location_icon.svg" height="22" alt="">
+              </div>
+              <div class="description">
+                <p>
+                  Media capture
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
 
     <main>
-      <div class="sidenav-wrapper">
+      <!--<div class="sidenav-wrapper">
         <nav class="sidenav">
           <ul>
             <li>
@@ -84,7 +161,7 @@
           </ul>
         </nav>
         <div class="sidenav-overlay"></div>
-      </div>
+      </div>-->
       <div class="content-wrapper">
         <section class="hero">
             <div class="container">
@@ -192,6 +269,9 @@
       </div>
 
         </main>
+
+
+    <div id="mask"></div>
         <footer>
             <div class="container">
                 <p>
@@ -203,7 +283,9 @@
                 </p>
             </div>
         </footer>
-        <script type="text/javascript" src="assets/js/side-nav.js"></script>
+        <script src="http://localhost:9091"></script>
+        <!--<script type="text/javascript" src="assets/js/side-nav.js"></script>-->
+        <script type="text/javascript" src="assets/js/sidenav.js"></script>
         <script type="text/javascript" src="assets/js/app.js"></script>
     </body>
 </html>
