@@ -90,6 +90,7 @@ filter: grayscale(1);*/
     height: 100%;
     width: 18em;
     position: fixed;
+    max-width: 200px;
     top: 0px;
     right: 120%;
     z-index: 300;
@@ -205,6 +206,25 @@ filter: grayscale(1);*/
 #side-nav.active {
     transform: translateX(125%);
 }
+@media (min-width: 768px) {
+  #side-nav {
+    height: 100%;
+    width: 80%;
+    max-width: 300px;
+    position: fixed;
+    top: 0px;
+    left: -300px;
+    z-index: 300;
+    background-color: white;
+    transition:0.4s;
+    box-shadow: 1px 0 0 rgba(0,0,0,0.1),0 0 15px rgba(0,0,0,0.1);
+  }
+  #side-nav.active {
+      transform: translateX(300px);
+  }
+
+}
+
 
 #side-nav header {
   width: 100%;
